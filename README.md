@@ -1,7 +1,7 @@
 # h2console-wildfly
 
-This is a simple h2 Database WAR, used to expose h2's web console.
+This is a simple H2 Database WAR, used to expose H2's web console.
 
-Access from other hosts is allowed (useful for e.g. Docker containers).
+Access from other hosts is allowed (useful for e.g. Docker containers), and H2's TCP server is started at deploy time. This allows to access databases via e.g. JDBC.
 
-JEE dependencies are resolved via Wildfly's latest stable BOM.
+Default H2 TCP port is 9092, which can be changed in web.xml.
